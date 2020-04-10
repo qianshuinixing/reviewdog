@@ -1,3 +1,7 @@
+
+
+
+
 package reviewdog
 
 import (
@@ -12,7 +16,8 @@ type DiffString struct {
 	b     []byte
 	strip int
 }
-
+func test111(){
+}
 func NewDiffString(diff string, strip int) DiffService {
 	return &DiffString{b: []byte(diff), strip: strip}
 }
@@ -59,4 +64,6 @@ func (d *DiffCmd) Diff(_ context.Context) ([]byte, error) {
 
 func (d *DiffCmd) Strip() int {
 	return d.strip
+}
+func test112(){
 }
